@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// メイン画面遷移
+Route::get('/index', 'App\Http\Controllers\TaskController@index')->name('tasks.index');
