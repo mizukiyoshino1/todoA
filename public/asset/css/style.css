@@ -1,0 +1,49 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* 一覧画面のヘッダー */
+header{
+  background-color: blue;
+  height: 50px;
+}
+
+/* .navbar{
+  background-color: blue;
+} */
+
+.nav-contents{
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+.list{
+  margin-left: 5%;
+  text-decoration: none;
+  list-style: none;
+  color: beige;
+}
+
+/* 一覧画面 */
+
+.tittle{
+  margin-top: 5%;
+}
+
+.comment{
+  margin-top: 5%;
+}
+
+.sub-content{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+
+h4{
+  margin-left: 5%;
+}
