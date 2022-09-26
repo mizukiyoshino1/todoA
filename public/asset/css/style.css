@@ -14,7 +14,7 @@ header{
 } */
 
 .nav-contents{
-  margin: 0%;
+  margin: 0; 
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -23,6 +23,7 @@ header{
 
 .list{
   margin-left: 5%;
+  margin-right: 3%;
   text-decoration: none;
   list-style: none;
   color: beige;
