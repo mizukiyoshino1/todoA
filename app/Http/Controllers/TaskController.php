@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+//Taskモデルを使う宣言
+use App\Models\Task;
+
+use GuzzleHttp\Promise\TaskQueue;
 use Illuminate\Http\Request;
 
 class TaskController extends Controller
@@ -11,5 +15,4 @@ class TaskController extends Controller
     {
         return view('tasks.index');
     }
-
 }
