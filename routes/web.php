@@ -20,6 +20,9 @@ Route::get('/', function () {
 // メイン画面遷移
 Route::get('/index', 'App\Http\Controllers\TaskController@index')->name('tasks.index');
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//新規投稿画面遷移
+Route::get('/tasks/create', 'App\Http\Controllers\TaskController@create')->name('tasks.create');
+
+Route::post('/tasks', 'App\Http\Controllers\TaskController@store')->name('tasks.store');
+
