@@ -28,7 +28,7 @@
                     <textarea class="form-control" placeholder="内容" rows="5" name="body">
                     </textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">create</button>
+                <button type="submit" class="btn btn-primary">Create</button>
             </form>
         </div>
     </div>
