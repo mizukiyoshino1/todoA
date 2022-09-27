@@ -21,7 +21,7 @@
               {{-- サニタイジング防止 --}}
                 <div class="form-group">
                     <label>Title</label>
-                    <input type="text" class="form-control" placeholder="タイトルを入力して下さい" name="title">
+                    <input type="text" class="form-control" placeholder="Titleを入力して下さい" name="title">
                 </div>
                 <div class="form-group">
                     <label>Description</label>
