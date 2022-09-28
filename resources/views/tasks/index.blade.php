@@ -14,17 +14,20 @@
     <nav class="navbar">
       <ul class="nav-contents">
         <a href="" class="list"><li>Login</li></a>
-        <a href="" class="list"><li>New Create</li></a>
+        <a href="{{ route('tasks.create')}}" class="list"><li>New Create</li></a>
       </ul>
     </nav>
   </header>
 
   {{-- 一覧画面 --}}
-  <section>
+  @foreach($tasks as $post)
+  <section>  
     <div class="main-content">
       <img src="" alt="">
-      <h1 class="tittle">タイトル</h1>
-      <p class="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi molestias accusantium nemo incidunt voluptatum quo vero animi, ut, aspernatur similique laboriosam quis reprehenderit sed. Totam nostrum id architecto minus perferendis!</p>
+      <h1 class="tittle">タイトル:{{ $post->title }}</h1>
+      <p class="comment">
+        内容: {{ $post->contents }}
+      </p>
     </div>
       
     <div class="sub-content">
@@ -35,6 +38,7 @@
       <h4>DELETE</h4>
     </div>
   </section>
+  @endforeach
   
 </body>
 </html>
