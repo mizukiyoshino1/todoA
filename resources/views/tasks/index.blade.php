@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -13,8 +12,8 @@
   <header>
     <nav class="navbar">
       <ul class="nav-contents">
-        <a href="" class="list"><li>Login</li></a>
-        <a href="" class="list"><li>New Create</li></a>
+        <a href="" class="list"><li>Logout</li></a>
+        <a href="{{ route('tasks.create')}}" class="list"><li>New Create</li></a>
       </ul>
     </nav>
   </header>
