@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="{{ asset('/asset/css/style.css') }}">
-  <title>Document</title>
-</head>
-<body>
-  {{-- 一覧画面のヘッダー --}}
-  <header>
-    <nav class="navbar">
-      <ul class="nav-contents">
-        <a href="" class="list"><li>Login</li></a>
-        <a href="{{ route('tasks.create')}}" class="list"><li>New Create</li></a>
-      </ul>
-    </nav>
-  </header>
+@extends('layouts.app_original')
+@section('content')
+
+  <a href="{{ route('tasks.create')}}" class="list"><button type="submit" class="btn btn-primary">New Create</button></a>
 
   {{-- 一覧画面 --}}
   @foreach($tasks as $post)
@@ -38,6 +23,4 @@
     </div>
   </section>
   @endforeach
-  
-</body>
-</html>
+@endsection
