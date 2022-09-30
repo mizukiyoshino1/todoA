@@ -3613,7 +3613,7 @@ textarea.form-control-lg {
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
-  color: var(--bs-nav-link-color);
+  color: #EEE8AA;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3760,7 +3760,7 @@ textarea.form-control-lg {
   padding-bottom: var(--bs-navbar-brand-padding-y);
   margin-right: var(--bs-navbar-brand-margin-end);
   font-size: var(--bs-navbar-brand-font-size);
-  color: var(--bs-navbar-brand-color);
+  color: #EEE8AA;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -3810,7 +3810,7 @@ textarea.form-control-lg {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
-  color: var(--bs-navbar-color);
+  color: #EEE8AA;
   background-color: transparent;
   border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
   border-radius: var(--bs-navbar-toggler-border-radius);
@@ -8203,7 +8203,7 @@ textarea.form-control-lg {
 
 .bg-white {
   --bs-bg-opacity: 1;
-  background-color: lightblue !important;
+  background-color: #800080 !important;
 }
 
 .bg-body {
@@ -8332,8 +8332,8 @@ textarea.form-control-lg {
 
 footer{
   text-align: center;
-  background-color: lightblue;
-  color: white;
+  background-color: #800080;
+  color: #EEE8AA;
   padding: 10px 0;
   margin-top: 100px;
   font-size: 15px;

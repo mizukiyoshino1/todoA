@@ -39,4 +39,28 @@ class TaskController extends Controller
         return redirect()->route('tasks.index');
     }
 
+    // $idはindex.blade.phpから送られたid
+    function edit($id)
+    {
+        $task = Task::find($id);
+        return view('tasks.edit', ['task'=>$task]);
+    }
+    //['task'=>$task];わからん
+
+    function update(Request $request, $id)
+    {
+        $post = Task::find($id);
+        $post -> title = $request -> title;
+        $post -> contents = $request -> body;
+        $post -> save();
+        return redirect()->route('tasks.index');
+        // compact('task')わからん
+    }
+
+    function destroy($id)
+    {
+        $task = Task::find($id);
+        $task->delete();
+        return redirect()->route('tasks.index');
+    }
 }
